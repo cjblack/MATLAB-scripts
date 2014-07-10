@@ -25,7 +25,7 @@ Dsf = Fs/dFs;
 Ddata=decimate(data,Dsf); %R=2; downsampled 50%
 L=length(Ddata);
 
-Dtimestamps=decimate(timestamps,60);
+Dtimestamps=decimate(timestamps,Dsf);
 Lt=length(Dtimestamps);
 
 %Notch filter for 60 Hz
